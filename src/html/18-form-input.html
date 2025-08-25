@@ -28,5 +28,47 @@
         <button type="submit">전송</button>
       </fieldset>
     </form>
+    <hr />
+    <h2>ui실습</h2>
+    <form method="post" action="https://formspree.io/f/xeqwwbwk">
+      <fieldset>
+        <!-- 검색어 입력 서식 -->
+        <div>
+          <label for="search">검색어</label>
+          <input placeholder="검색어를 입력하세요." type="search" id="searchKeyword" name="keyword" />
+        </div>
+        <!-- 전화번호 입력 서식 -->
+        <div>
+          <label for="tel">전화번호</label>
+          <input required placeholder="ex>010-4545-4545" type="tel" name="userPhone" id="userPhone" />
+        </div>
+        <!-- 체크박스 입력 서식 -->
+        <div>
+          <input checked type="checkbox" value="html" name="vscodehtml" id="HTML" />
+          <label for="HTML">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" value="css" name="vscodecss" id="CSS" />
+          <label for="CSS">CSS</label>
+        </div>
+        <!-- 라디오 서식 -->
+        <div>
+          <input checked type="radio" value="회고 1팀" name="team" id="1st team" />
+          <label for="1st team">회고 1팀</label>
+        </div>
+        <div>
+          <input type="radio" value="회고 2팀" name="team" id="2nd team" />
+          <label for="2nd team">회고 2팀</label>
+        </div>
+        <!-- 암묵적인 레이블링 (스크린리더 환경에서의 이슈때문에 권장하지 않음) -->
+        <div>
+          <label> <input type="radio" checked name="team" value="js" /> 회고 3팀 </label>
+        </div>
+        <!-- 버튼 요소 -->
+        <input type="submit" value="전송" />
+        <input type="reset" value="초기화" />
+        <input type="button" value="버튼" />
+      </fieldset>
+    </form>
   </body>
 </html>
