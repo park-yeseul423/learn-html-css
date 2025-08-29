@@ -1,0 +1,36 @@
+body {
+  margin: 20px;
+}
+
+/* css nesting */
+/* 중첩 선택자 : 중괄호 안에 다른 걸 삽입하려면 빈줄은 필수 */
+.likelion {
+  background-color: #ffc;
+
+  /* 자식 선택자 */
+  > ul {
+    list-style-image: url(/src/assets/thumbnail/new.png);
+  }
+
+  /* 하위 선택자, 문맥 선택자 */
+  ul {
+    padding-left: 40px;
+  }
+
+  li {
+    margin: 10px 0;
+
+    li:first-child {
+      color: red;
+    }
+  }
+
+  .sub-last {
+    background-color: #cff;
+
+    &:hover {
+      background-color: darkblue;
+      color: white;
+    }
+  }
+}
