@@ -1,0 +1,36 @@
+body {
+  margin: 20px;
+}
+
+/* 유틸리티 바 */
+/* float 사용 방법 */
+/* .utility-bar {
+  background: lightcyan;
+  text-transform: uppercase;
+  display: flow-root;
+
+  li {
+    background: pink;
+    margin: 5px;
+    float: left;
+  }
+} */
+
+.utility-bar {
+  /* background: lightblue; */
+  text-transform: none;
+  font-size: 0;
+  text-align: left;
+
+  li {
+    /* background: pink; */
+    display: inline-block;
+  }
+
+  a,
+  span {
+    display: inherit;
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
