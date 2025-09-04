@@ -16,7 +16,7 @@
     <a href="/index.html">Index로 이동</a>
     <h1>netflix-form</h1>
     <h2>버튼</h2>
-    <div>
+    <div class="ui-component">
       <button class="button button-fill icon" type="button">
         30일 무료이용
         <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +33,17 @@
       <button class="button button-none" type="button">버튼텍스트</button>
       <button class="button button-none" type="button" disabled>버튼텍스트</button>
       <button class="button button-none" type="button">버튼텍스트</button>
+    </div>
+
+    <h2>입력 서식</h2>
+    <div class="ui-component">
+      <div class="input-wrapper">
+        <div class="input">
+          <label for="inputNumber">레이블</label>
+          <input type="text" id="inputNumber" name="inputNumber" required />
+        </div>
+        <p>정확한 이메일 주소를 입력하세요.</p>
+      </div>
     </div>
   </body>
 </html>
