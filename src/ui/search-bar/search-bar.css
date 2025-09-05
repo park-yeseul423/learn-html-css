@@ -42,3 +42,44 @@ body {
     color: transparent;
   }
 }
+
+/* 버튼 */
+/* .circle-gradient {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(var(--start-color), var(--end-color));
+}
+
+.circle-gradient::before {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: white;
+} */
+
+/* 버튼 예시 */
+.circle-gradient {
+  --size: 24px;
+
+  background: var(--start-color) linear-gradient(var(--start-color), var(--end-color));
+  inline-size: var(--size);
+  block-size: var(--size);
+  border: 0 none;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    inline-size: calc(var(--size) / 2.5);
+    block-size: calc(var(--size) / 2.5);
+    background: var(--white);
+    border-radius: inherit;
+  }
+}
