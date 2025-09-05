@@ -195,3 +195,39 @@ body {
     margin-inline-start: 24px;
   }
 }
+
+/* 콤보 박스 */
+.combo-box {
+  --text-color: var(--gray-300);
+
+  background: #ffc;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  color: var(--text-color);
+
+  svg {
+    position: absolute;
+    margin: 6px;
+    pointer-events: none;
+  }
+
+  > svg:nth-of-type(1) {
+    inset-inline-start: 0;
+  }
+
+  > svg:nth-of-type(2) {
+    inset-inline-end: 0;
+  }
+
+  select {
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    width: 113px;
+    font-size: 1em;
+    padding: 0.25em 1em 0.25em 2em;
+    color: inherit;
+    appearance: none;
+  }
+}
