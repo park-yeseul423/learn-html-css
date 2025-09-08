@@ -5,6 +5,7 @@
   --green-300: #03cca8;
 
   --blue-100: #e9f0fd;
+  --red-100: #ff1414;
 
   --gray-100: #bcc3c7;
   --gray-200: #9b9a90;
@@ -15,7 +16,6 @@
   --end-color: var(--green-300);
   --active-color: var(--blue-100);
 }
-
 body {
   margin: 20px;
 }
@@ -130,5 +130,38 @@ body {
   input:checked + label::after {
     content: 'ON';
     color: var(--green-100);
+  }
+}
+
+/* 입력 서식 컴포넌트 */
+.input {
+  --size: 72px;
+
+  background: lavender;
+  display: inline-flex;
+  flex-flow: row wrap;
+  block-size: var(--size);
+  align-content: space-between;
+
+  input {
+    inline-size: 100%;
+    block-size: 48px;
+    border: 1px solid var(--gray-200);
+    padding-inline-start: 0.5em;
+
+    &:read-only {
+      background: var(--gray-100);
+    }
+  }
+
+  .error-message {
+    color: var(--red-100);
+    font-size: 0.625rem;
+    background: pink;
+    visibility: hidden;
+  }
+
+  input:user-invalid + .error-message {
+    visibility: visible;
   }
 }
