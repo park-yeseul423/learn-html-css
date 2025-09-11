@@ -1,1 +1,56 @@
 /* 애니메이션 관련 CSS */
+/* shake 애니매이션 */
+@keyframes shake {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: -20px 0;
+  }
+}
+
+/* Bounce 애니메이션 */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* shrink 애니메이션 */
+@keyframes shrink {
+  0% {
+    scale: 1;
+    transform-origin: 0 0;
+  }
+  100% {
+    scale: 0.5;
+  }
+}
+
+/* /* move 애니메이션 */
+@keyframes move {
+  0% {
+    /* margin-inline-start: 0; */
+    translate: 0 0;
+  }
+  100% {
+    /* margin-inline-start: 100px; */
+    translate: 100px 0;
+  }
+}
+
+/* fade 애니메이션 */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  /* 50% {
+    opacity: 0;
+  } */
+  100% {
+    opacity: 0;
+  }
+}
